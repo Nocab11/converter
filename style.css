@@ -34,3 +34,21 @@
 .course-item-value.bottom {
     color: rgb(19, 189, 61);
 }
+
+@media (max-width: 992px) {
+    .container .course-wrap {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .course-item {
+        margin-bottom: 15px;
+    }
+    .courses {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+
+}
