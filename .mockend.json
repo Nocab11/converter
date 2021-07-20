@@ -1,14 +1,29 @@
 {
-  "Post": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "json-serverss",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-serverssss",
+      "author": "typicode"
     }
-  },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
     }
+  ],
+  "profile": {
+    "name": "typicode"
   }
 }
