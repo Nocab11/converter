@@ -1,31 +1,17 @@
 {
-  "data": {
-    "posts": [
-      {
-        "id": 66,
-        "title": "DORmmYUfGE",
-        "views": 99
-      },
-      {
-        "id": 24,
-        "title": "6lJcfVQWXw",
-        "views": 98
-      },
-      {
-        "id": 83,
-        "title": "tDqazUzb7a",
-        "views": 98
-      },
-      {
-        "id": 5,
-        "title": "tUND1JWxBA",
-        "views": 96
-      },
-      {
-        "id": 23,
-        "title": "WLtoFknTBQ",
-        "views": 96
+  "Post": {
+    "title": { "string": {
+        "item": "test"
       }
-    ]
+    },
+    "comments": {
+      "hasMany": "Comment"
+    }
+  },
+  "Comment": {
+    "body": { "string": {} },
+    "post": {
+      "belongsTo": "Post"
+    }
   }
 }
